@@ -53,7 +53,7 @@ inputBtn.oninput = function(event){
         console.log('Begin!!!!');
         firstWord = document.querySelector(`.highlighted0`);
         firstWord.style.color= 'blue';
-        firstWord.style.fontWeight= 'bolder';
+        firstWord.style.fontWeight= 'der';
         j = 1;
     } // To check if the typing has beginned!! & change the style of first word
     if(event.data == ' '){ // to check when space button is pressed
