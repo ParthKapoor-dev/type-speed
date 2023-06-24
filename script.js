@@ -2,25 +2,20 @@
 // add speed for individual words and the whole para
 // error given by user 
 // number of words that is required by the user
+    const mainText = document.querySelector('.main-text');
+    const inputBtn = document.querySelector('.inputBtn');
+    const timer = document.querySelector('.timer');
+    const timerBox = document.querySelector('.timeTaken')
 
-
-
-
-
-const mainText = document.querySelector('.main-text');
-const inputBtn = document.querySelector('.inputBtn');
-const timer = document.querySelector('.timer');
-const timerBox = document.querySelector('.timeTaken')
-
-const url ='https://jokes-by-api-ninjas.p.rapidapi.com/v1/jokes';
-const options = {
-    method: 'GET',
-    
-    headers: {
-      'X-RapidAPI-Key': 'f910172880mshc445b1e925d5466p197cc4jsncc99e08c252a',
-      'X-RapidAPI-Host': 'jokes-by-api-ninjas.p.rapidapi.com'
-    }
-  };
+    const url ='https://jokes-by-api-ninjas.p.rapidapi.com/v1/jokes';
+    const options = {
+        method: 'GET',
+        
+        headers: {
+        'X-RapidAPI-Key': 'f910172880mshc445b1e925d5466p197cc4jsncc99e08c252a',
+        'X-RapidAPI-Host': 'jokes-by-api-ninjas.p.rapidapi.com'
+        }
+    };
   
 fetch(url,options)
 .then(response => response.json())
@@ -53,7 +48,7 @@ inputBtn.oninput = function(event){
         console.log('Begin!!!!');
         firstWord = document.querySelector(`.highlighted0`);
         firstWord.style.color= 'blue';
-        firstWord.style.fontWeight= 'der';
+        firstWord.style.fontWeight= 'bolder';
         j = 1;
     } // To check if the typing has beginned!! & change the style of first word
     if(event.data == ' '){ // to check when space button is pressed

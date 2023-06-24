@@ -1,0 +1,4 @@
+Rules should be clear!!!
+
+1) If a word is incorrectly spelled , it will not be counted in wpm
+2) If it is corrected afterwords it will not be counted
